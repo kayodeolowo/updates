@@ -1,16 +1,27 @@
 import React, { useState } from 'react'
 
+
 const Count = () => {
-    const [counter, setCounter] = useState(0)
-    const add = () => {
-        setCounter (counter + 1)
-    }
+
+  const [counter, usecounter] = useState (1)
+  const [val, useval] = useState (true)
+
+  const add = () => {
+
+    usecounter (counter + 1)
+}
+
+ const sub = () => {
+
+    usecounter = counter - 1
+
+}
+
 
   return (
     <div>
-        <button onClick={add}> add </button>
+      <button onClick={add}> add </button>
         <h1> {counter} </h1>
-        <button> sub </button>
     </div>
   )
 }
