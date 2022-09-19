@@ -1,13 +1,13 @@
 import React from "react";
-import Count from "./Count";
 import Mycount from "./Mycount";
+import Reducer from "./Reducer";
 
 
 function App() {
   return (
     <div>
       <Mycount/>
-      <Count/>
+      <Reducer/>
     </div>
   );
 }
