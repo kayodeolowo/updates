@@ -20,10 +20,10 @@ const Mycount = () => {
         setShowtest (!showtext);
     }
  return (
-    <div className="container mx-auto flex pt-40 text-xl text-red-600">
+    <div className="container mx-auto px-4 flex pt-40 text-xl text-red-600">
         
 
-        <button className="bg-red-500 w-20 rounded-lg ml-20" onClick={add}> add </button>
+        <button className="bg-red-500 w-20 rounded-lg " onClick={add}> add </button>
         <h1 className=""> 
           {counter}
         </h1>
