@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+//usestae
+
 const Mycount = () => {
 
     const [counter, setCounter] = useState(0);
@@ -18,16 +20,16 @@ const Mycount = () => {
         setShowtest (!showtext);
     }
  return (
-    <div className="w-full mx-auto flex pt-40">
+    <div className="container mx-auto flex pt-40 text-xl text-red-600">
         
 
         <button className="bg-red-500 w-20 rounded-lg ml-20" onClick={add}> add </button>
-        <h1 className="ml-20"> 
+        <h1 className=""> 
           {counter}
         </h1>
-         <button className="bg-blue-400  w-20 rounded-lg ml-20" onClick={sub}> sub </button>
+         <button className="bg-blue-400  w-20 rounded-lg " onClick={sub}> sub </button>
 
-        <button className="bg-yellow-400  w-20 rounded-lg ml-20" onClick={text}> click me </button>
+        <button className="bg-yellow-400  w-20 rounded-lg " onClick={text}> click me </button>
 
         <h1 className='ml-10 text-blue-400'> 
                   {showtext && <p> Even number </p> || <p> odd number </p> }

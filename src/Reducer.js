@@ -1,38 +1,47 @@
 import React, { useReducer } from 'react'
 
 
-const reducerFunction = ( state, action) => {
+
+const ACTIONS = {
+    INCREMENT : 'increment',
+    DECREMENT : 'decrement'
+}
+
+
+
+function reducerFunction  ( state, action)  {
     switch(action.type) {
-        case 'increment' :
-            return {
-                ...state,
-                count: state.count + 1
-            }
+        case ACTIONS.INCREMENT :
+           return {count: state.count + 1 }
+
+
+            case ACTIONS.DECREMENT :
+           return {count: state.count - 1 }
+
+            default :  return state
         
+        }
+    }
+const Reducer = () => {
+    const [state, dispatch] = useReducer (reducerFunction, {count : 0} )
 
-
-            default :
-                return state
-            
+    function adding () {
+        dispatch ({type:ACTIONS.INCREMENT})
     }
 
-}
-
-const initialState = {
-    count : 0
-}
-
+    
+    function subt () {
+        dispatch ({type:ACTIONS.DECREMENT})
+    }
 
 
-const Reducer = () => {
-    const [state, dispatch] = useReducer (reducerFunction, initialState)
   return (
-    <div>
-        <div> 
-            <button onClick={()}> Add </button>
-            <h1> {state.type}  </h1> 
-            <button> sub </button>
-        </div>
+    <div className='container mx-auto '>
+
+
+            <button onClick={adding}> Add  </button>
+            <h1> {state.count}  </h1>
+            <button onClick={subt}> Sub </button>
     </div>
   )
 }
