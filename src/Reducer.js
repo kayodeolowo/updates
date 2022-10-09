@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react'
+import { Button } from './components/Button.style'
 
 
 
@@ -36,12 +37,12 @@ const Reducer = () => {
 
 
   return (
-    <div className='container mx-auto px-4 '>
+    <div className='container mx-auto px-4 mt-4 flex '>
 
 
-            <button onClick={adding}> Add  </button>
+            <Button onClick={adding}>  Add numbers </Button>
             <h1> {state.count}  </h1>
-            <button onClick={subt}> Sub </button>
+            <Button onClick={subt}> Sub </Button>
     </div>
   )
 }

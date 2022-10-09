@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import { Button, Buttoner } from './components/Button.style';
+
 //usestae
 
 const Mycount = () => {
@@ -20,7 +22,8 @@ const Mycount = () => {
         setShowtest (!showtext);
     }
  return (
-    <div className="container mx-auto px-4 flex pt-40 text-xl text-red-600">
+    <section className='container mx-auto'> 
+    <div className=" px-4 flex pt-40 text-xl text-red-600">
         
 
         <button className="bg-red-500 w-20 rounded-lg " onClick={add}> add </button>
@@ -36,6 +39,12 @@ const Mycount = () => {
         </h1>
          
     </div>
+
+    <div className='mt-10 flex space-x-9'> 
+         <Button> tailwind button </Button> 
+        <Buttoner backgroundColor="yellow"> normal css   </Buttoner>
+    </div>
+    </section>
   );
 }
 
