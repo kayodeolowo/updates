@@ -23,7 +23,7 @@ export const Contact = () => {
         }
     }
   return (
-    <div>
+    <div className='container mx-auto'>
         {loading && contacts.map((contac)=> (
             <div key={contac.login.uuid}>
                 {contac.name.first}
