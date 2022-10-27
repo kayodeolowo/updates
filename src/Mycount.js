@@ -23,7 +23,7 @@ const Mycount = () => {
     }
  return (
     <section className='container mx-auto'> 
-    <div className=" px-4 flex pt-40 text-xl text-red-600">
+    <div className=" px-4 flex pt-4 text-xl text-red-600">
         
 
         <button className="bg-red-500 w-20 rounded-lg " onClick={add}> add </button>
