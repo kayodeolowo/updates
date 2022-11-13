@@ -37,7 +37,7 @@ const Reducer = () => {
 
 
   return (
-    <div className='container mx-auto px-4 mt-4 flex '>
+    <div className='container mx-auto max-w-[1240px] mt-4 flex  border-2'>
 
 
             <Button onClick={adding}>  Add numbers </Button>

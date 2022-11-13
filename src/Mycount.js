@@ -22,7 +22,7 @@ const Mycount = () => {
         setShowtest (!showtext);
     }
  return (
-    <section className='container mx-auto'> 
+    <section className='container mx-auto max-w-[1240px] border-2'> 
     <div className=" px-4 flex pt-4 text-xl text-red-600">
         
 

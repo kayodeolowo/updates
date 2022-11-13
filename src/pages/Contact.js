@@ -23,7 +23,7 @@ export const Contact = () => {
         }
     }
   return (
-    <div className='container mx-auto'>
+    <div className='container max-w-[1240px] mx-auto border-2'>
         {loading && contacts.map((contac)=> (
             <div key={contac.login.uuid}>
                 {contac.name.first}
