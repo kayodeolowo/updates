@@ -1,4 +1,5 @@
 import React from "react";
+import Header from './components/Header'
 import Mycount from "./Mycount";
 import { Contact } from "./pages/Contact";
 import Navbar from "./pages/Navbar";
@@ -11,11 +12,11 @@ function App() {
   return (
     <div>
      
-      <Navbar/>
-      
-      <Mycount/>
+      {/* <Navbar/> */}
+      <Header/>
+      {/* <Mycount/>
       <Reducer/>
-      <Contact/> 
+      <Contact/>  */}
      
     </div>
   );
