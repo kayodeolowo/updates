@@ -32,6 +32,8 @@ export const Contact = () => {
                 <h1> age: {contac.registered.age} </h1>
                  </div>
         ))}
+
+        
     </div>
   )
 }

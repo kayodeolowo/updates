@@ -14,9 +14,9 @@ function App() {
      
       {/* <Navbar/> */}
       <Header/>
-      {/* <Mycount/>
+      <Mycount/>
       <Reducer/>
-      <Contact/>  */}
+      <Contact/> 
      
     </div>
   );
