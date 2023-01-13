@@ -13,10 +13,10 @@ function App() {
     <div>
      
       {/* <Navbar/> */}
-      <Header/>
-      <Mycount/>
+      {/* <Header/>
+      <Mycount/> */}
       <Reducer/>
-      <Contact/> 
+      {/* <Contact/>  */}
      
     </div>
   );
